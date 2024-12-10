@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bubblestyle.css">
+  <title>Bubble Maker</title>
+</head>
+<body>
+  <main>
+    <h1>Make Bubbles</h1>
+    <div class="controls">
+      <label for="wand">Choose a Wand:</label>
+      <div class="wand-options">
+        <img src="images/pinkwand.png" class="wand" data-wand="pink" alt="Pink Wand">
+        <img src="images/purplewand.png" class="wand" data-wand="purple" alt="Purple Wand">
+        <img src="images/redwand.png" class="wand" data-wand="red" alt="Red Wand">
+      </div>
+      
+      <label for="background">Change Background:</label>
+      <select id="background">
+        <option value="linear-gradient(to bottom, #87ceeb, #ffffff)">Sky</option>
+        <option value="url('images/forest.png')">Forest</option>
+        <option value="url('images/ocean.png')">Ocean</option>
+      </select>
+    </div>
+    <div id="bubble-canvas"></div>
+  </main>
+  <script src="bubbles.js"></script>
+</body>
+</html>
