@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Popping Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+  </head>
+</head>
+<body class="ocean">
+
+  <!--start screen-->
+<div id="start-screen">
+  <h1>Bubble Pop!</h1>
+  <p>Click the bubbles before they float away!</p>
+  <div class="difficulty-buttons">
+    <button class="difficulty-btn easy" onclick="startGame('easy')">Easy</button>
+    <button class="difficulty-btn medium" onclick="startGame('medium')">Medium</button>
+    <button class="difficulty-btn hard" onclick="startGame('hard')">Hard</button>
+  </div>
+</div>
+
+    <!-- Control Panel -->
+    <div class="controls">
+      <h2>Choose Scene</h2>
+      <button class="btn-ocean" onclick="changeBackground('ocean')">🌊 Ocean</button>
+      <button class="btn-sunset" onclick="changeBackground('sunset')">🌅 Sunset</button>
+      <button class="btn-night" onclick="changeBackground('night')">🌙 Night</button>
+      <button class="btn-forest" onclick="changeBackground('forest')">🌲 Forest</button>
+    </div>
+
+  
+
+    <!-- Score Display -->
+    <div class="score">
+      Score: <span id="score-value">0</span>
+    </div>
+
+<!-- Cursor Toggle -->
+<div class="cursor-toggle-container">
+  <button id="cursor-toggle" class="btn-toggle" onclick="toggleCursor()">
+    🫧 Cursor Effect: ON
+  </button>
+</div>
+
+
+    <!-- Bubble Container -->
+    <div id="bubble-container"></div>
+
+    <script src="bubbles.js"></script>
+  </body>
+  </html>
